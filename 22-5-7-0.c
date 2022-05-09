@@ -1,16 +1,16 @@
-//���ļ���ͷ����#define _CRT_SECURE_NO_WARNINGS 1
-//������Ŀ--����--C--Ԥ������--<�༭>������_CRT_SECURE_NO_WARNINGS
+//在文件开头添加#define _CRT_SECURE_NO_WARNINGS 1
+//或在项目--属性--C--预处理器--<编辑>中添加_CRT_SECURE_NO_WARNINGS
 //#include<stdio.h>
 //int main()
 //{
-	//����
-		//3;//1.���泣��
-	//2.const���α䳣��
-	//const-������
-	//const int n = 10;//n�Ǳ������������г����ԣ���������˵n�ǳ�����
-	//int arr[n] = { 0 };//��n���ʻ���һ����������[]��n������
+	//常量
+		//3;//1.字面常量
+	//2.const修饰变常量
+	//const-常属性
+	//const int n = 10;//n是变量，但是又有常属性，所以这里说n是常变量
+	//int arr[n] = { 0 };//但n本质还是一个变量，故[]内n不能用
 
-	//const int num = 4;//���ɸ�
+	//const int num = 4;//不可改
 	//printf("%d\n", num);
 	//num = 8;
 	//printf("%d\n", num);
@@ -24,8 +24,8 @@
 //	return 0;
 //}
 
-//#include<stdio.h>
-//	//3.#define ����ı�ʶ������
+//#include<stdio.h> 
+//	//3.#define 定义的标识符常量
 //#define MAX 10
 //
 //int main()
@@ -37,14 +37,14 @@
 
 #include<stdio.h>
 
-//4.ö�ٳ���
-//ö��--һһ�о�
-//�Ա��С�Ů������
-//��ԭɫ���졢�ơ���
-//���ڣ�1234567
+//4.枚举常量
+//枚举--一一列举
+//性别：男、女、保密
+//三原色：红、黄、蓝
+//星期；1234567
 
-//ö�ٹؼ���-enum
-//ö�ٳ���--�·�
+//枚举关键字-enum
+//枚举常量--下方
 //enum Sex
 //{
 //	MALE,
@@ -57,10 +57,10 @@
 //	printf("%d\n", MALE);//0
 //	printf("%d\n", FEMALE);//1
 //	printf("%d\n", SECRET);//2
-//	//����ÿ�����Ŷ�����ֵ�ģ������ǲ��ɱ��ı��--ö�ٳ���
+//	//他们每个符号都是有值的，他们是不可被改变的--枚举常量
 //	return 0;
 //}
-//����2
+//例子2
 //enum Color
 //{
 //	RED,
@@ -70,8 +70,8 @@
 //
 //int main()
 //{
-//	enum Color color = BLUE;//color��������ǿ��Ըĵ�
-//	color = YELLOW;//ö�ٳ������ܸģ���ö�����ʹ����ı����ɸ�
+//	enum Color color = BLUE;//color这个变量是可以改的
+//	color = YELLOW;//枚举常量不能改，但枚举类型创建的变量可改
 //	printf("%d", color);
 //	return 0;
 //}
