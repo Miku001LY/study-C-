@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 
 //char-字符类型
@@ -22,7 +23,7 @@ int main()
 	//int num1 = 0;//=0是给予一个初始值
 	//int num2 = 0;
 	////输入数据-使用输入函数scanf
-	//scanf_s("%d%d", &num1, &num2);//&-取地址符号
+	//scanf("%d%d", &num1, &num2);//&-取地址符号
 	////该语法意思将第一个%d放在地址处，第二个%d放在地址处
 	//int sum = 0;
 	////C语言语法规定，变量要定义在当前代码块的最前面
