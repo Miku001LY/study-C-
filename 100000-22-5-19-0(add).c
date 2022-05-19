@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-//int g_val = 2020;//全局变量
+//int g_val = 2020;//脠芦戮脰卤盲脕驴
 
-//定义一个函数
+//露篓脪氓脪禄赂枚潞炉脢媒
 //static int Add(int x, int y)
 //{
 //	int z = x + y;
